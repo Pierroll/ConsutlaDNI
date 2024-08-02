@@ -1,0 +1,10 @@
+PAGINA-API-RENIEC/
+├── public/
+│   ├── css/
+│   │   └── estilos.css
+│   ├── js/
+│   │   └── Main.js
+│   └── index.html
+├── config.js
+├── server.js
+└── .env

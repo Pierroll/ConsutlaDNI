@@ -1,0 +1,182 @@
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1a2b; /* Azul oscuro */
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo del contenedor */
+.container {
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #1c2a4a; /* Un tono más claro de azul oscuro */
+  border-radius: 10px;
+  margin: auto;
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilo del encabezado */
+header {
+  text-align: center; /* Centra el texto horizontalmente */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #f5f5f5;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #c2c2c2;
+}
+
+/* Estilo del input */
+.input input {
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Estilo del botón */
+.button button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #f5f5f5;
+  background-color: #003366; /* Azul más oscuro para el botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+.button button:hover {
+  background-color: #002244; /* Azul aún más oscuro en hover */
+}
+
+/* Estilo del resultado */
+.resultado {
+  margin-top: 20px;
+  text-align: center; /* Centra el texto dentro de los resultados */
+}
+
+.resultado .dni,
+.resultado .nombre,
+.resultado .apellido,
+.resultado .cui {
+  margin-bottom: 15px;
+}
+
+.resultado .label h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.resultado .res input {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #f5f5f5;
+  color: #0d1a2b;
+}
+
+/* Estilo del footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #001a33; /* Azul muy oscuro para el footer */
+  color: #f5f5f5;
+  width: 100%;
+}
+
+footer p, footer a {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #f5f5f5;
+  background-color: #003366;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #002244;
+}
+
+/* Estilo del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Consulta de DNI</title>
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Consulta de Persona por DNI</h1>
+        <p>
+          Utiliza este servicio para obtener información básica de ciudadanos
+          peruanos mediante su número de DNI.
+        </p>
+        <p class="limit-warning">
+          Atención: Las consultas a esta herramienta son limitadas, por favor,
+          utilízala con consideración.
+        </p>
+      </header>
+      <div class="container">
+        <div class="input">
+          <input
+            class="dni"
+            id="dni"
+            name="dni"
+            placeholder="Número de DNI"
+            type="number"
+          />
+        </div>
+        <div class="button">
+          <button id="boton">Buscar</button>
+        </div>
+        <div class="resultado">
+          <div class="dni">
+            <div class="label">
+              <h2>DNI</h2>
+            </div>
+            <div class="res">
+              <input id="doc" readonly type="text" />
+            </div>
+          </div>
+          <div class="nombre">
+            <div class="label">
+              <h2>Nombre</h2>
+            </div>
+            <div class="res">
+              <input id="nombre" readonly type="text" />
+            </div>
+          </div>
+          <div class="apellido">
+            <div class="label">
+              <h2>Apellido</h2>
+            </div>
+            <div class="res">
+              <input id="apellido" readonly type="text" />
+            </div>
+          </div>
+          <div class="cui">
+            <div class="label">
+              <h2>CUI</h2>
+            </div>
+            <div class="res">
+              <input id="cui" readonly type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Consulta de DNI. Todos los derechos reservados.</p>
+      <p>Sígueme en:</p>
+      <a
+        href="https://www.linkedin.com/in/geanpieropinedocalle-b1a609272"
+        target="_blank"
+        >LinkedIn</a
+      >
+      |
+      <a
+        href="https://www.facebook.com/Pierrooll?mibextid=ZbWKwL "
+        target="_blank"
+        >Facebook</a
+      >
+      |
+      <a href="https://wa.me/902132051" target="_blank">WhatsApp</a>
+      <button id="donateButton">Comprar un Café (Donar)</button>
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Escanea para donar</h2>
+        <img
+          src="images/qr.jpg"
+          alt="Código QR para donaciones"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+
+    <script src="js/Main.js" type="text/javascript"></script>
+  </body>
+</html>
